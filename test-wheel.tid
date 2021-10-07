@@ -1,4 +1,4 @@
-title: Test wheel widget
+title: $:/plugins/can/colourwheel/test-wheel
 
 \define hue1() <$transclude tiddler=<<statetid>> field=hue1/>
 \define hue2() <$transclude tiddler=<<statetid>> field=hue2/>
@@ -34,13 +34,13 @@ title: Test wheel widget
 
     <div style="display: flex; flex-direction:row;">
         <div class="swatch-col">
-            <div class="wheel-swatch1"></div> <div>H = <<hue1>></div>
+            <div class="wheel-swatch1"></div> <div>hue1 = <<hue1>></div>
         </div>
         <div class="swatch-col">
-            <div class="wheel-swatch2"></div> <div>H = <<hue2>></div>
+            <div class="wheel-swatch2"></div> <div>hue2 = <<hue2>></div>
         </div>
         <div class="swatch-col">
-            <div class="wheel-swatch3"></div> <div>H = <<hue3>></div>
+            <div class="wheel-swatch3"></div> <div>hue3 = <<hue3>></div>
         </div>
     </div>
 </div>

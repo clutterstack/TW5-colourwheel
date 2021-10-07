@@ -1,5 +1,5 @@
 /*\
-$:/plugins/can/colourwheel/wheel.js
+title: $:/plugins/can/colourwheel/wheel.js
 type: application/javascript
 module-type: widget
 
@@ -195,8 +195,8 @@ A colour wheel to pick a hue
         this.getMarkerMode();
         this.widgetWidth = "220px";
         this.widgetHeight = "220px";
-        this.circlemaskSVG = "simplemask.svg";
-        this.markerSVG = "simplepointers.svg";
+        this.circlemaskSVG = "$:/plugins/can/colourwheel/simplemask.svg";
+        this.markerSVG = "$:/plugins/can/colourwheel/simplepointers.svg";
         // Now initialise all the variables
         this.mousex = 0;
         this.mousey = 0;

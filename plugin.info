@@ -4,7 +4,7 @@
     "author": "Chris Nicoll",
     "version": "0.0.1",
     "core-version": ">=5.1.23",
-    "source": "https://github.com/clutterstack/can-tw/TW5-builder",
+    "source": "https://github.com/clutterstack/can-tw/TW5-colourwheel",
     "list": "readme license",
     "plugin-type": "plugin"
 }

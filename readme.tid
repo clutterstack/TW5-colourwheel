@@ -1,11 +1,11 @@
 title: $:/plugins/can/colourwheel/readme
 caption: readme
 
-''Colourwheel'' is a ~TiddlyWiki plugin to choose a colour or three with a colour wheel.
+''Colourwheel'' is a ~TiddlyWiki plugin to choose a colour or three with a colour wheel. It is based around the ''colourwheel'' widget ([[$:/plugins/can/colourwheel/wheel.js]]).
 
-''Demo:'' https://clutterstack.github.io/can-tw/builder
-
+"""
+''Source:'' https://github.com/clutterstack/can-tw/TW5-colourwheel
+''Demo:'' https://clutterstack.github.io/TW5-colourwheel/
 ''~TiddlyWiki:'' https://tiddlywiki.com
-
 ''~TiddlyWiki at ~GitHub:'' https://github.com/Jermolene/TiddlyWiki5
-
+"""
