@@ -1,0 +1,65 @@
+title: Test wheel widget
+
+\define hue1() <$transclude tiddler=<<statetid>> field=hue1/>
+\define hue2() <$transclude tiddler=<<statetid>> field=hue2/>
+\define hue3() <$transclude tiddler=<<statetid>> field=hue3/>
+
+\define huecol1() hsla($(hue1)$, 100%, 50%, 1)
+\define huecol2() hsla($(hue2)$, 100%, 50%, 1)
+\define huecol3() hsla($(hue3)$, 100%, 50%, 1)
+
+<div style="display: flex; flex-direction:row; flex-wrap: wrap; gap: 20px;">
+
+  <$vars statetid="$:/state/colourwheel/hues" >
+
+  <$colourwheel tiddler=<<statetid>> />
+
+  <div>
+
+    ''Instantaneous hues:''
+
+    <div style="display: flex; flex-direction:row;">
+        <div class="swatch-col">
+            <div class="triad1"> </div>
+        </div>
+        <div class="swatch-col">
+            <div class="triad2"></div>
+        </div>
+        <div class="swatch-col">
+            <div class="triad3"></div>
+        </div>
+    </div>
+
+     ''Stored in <<statetid>>:''
+
+    <div style="display: flex; flex-direction:row;">
+        <div class="swatch-col">
+            <div class="wheel-swatch1"></div> <div>H = <<hue1>></div>
+        </div>
+        <div class="swatch-col">
+            <div class="wheel-swatch2"></div> <div>H = <<hue2>></div>
+        </div>
+        <div class="swatch-col">
+            <div class="wheel-swatch3"></div> <div>H = <<hue3>></div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+.swatch-col {
+    display: flex;
+    flex-direction:column;
+    width: 6em;
+}
+.wheel-swatch1, .wheel-swatch2, .wheel-swatch3, .triad1, .triad2, .triad3 {
+width: 4em; 
+height: 4em;
+border: 1px solid;
+}
+.wheel-swatch1 {background-color: <<huecol1>>;}
+.wheel-swatch2 {background-color: <<huecol2>>;}
+.wheel-swatch3 {background-color: <<huecol3>>;}
+</style>
+
+</$vars>
